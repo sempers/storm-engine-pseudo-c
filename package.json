@@ -1,0 +1,25 @@
+{
+    "name": "storm-engine-pseudo-c",
+    "displayName": "Storm Engine Pseudo-C",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "stormc",
+            "aliases": ["Storm Engine Pseudo-C", "stormc"],
+            "extensions": [".c", ".h"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "stormc",
+            "scopeName": "source.stormc",
+            "path": "./syntaxes/stormc.tmLanguage.json"
+        }]
+    }
+}
